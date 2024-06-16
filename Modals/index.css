@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  color: red;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  background-color: aquamarine;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: fit-content;
+  padding: 0 5px 5px 5px;
+  text-align: justify;
+  background-color: rgb(146, 120, 120);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+}
+.modalMinimize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 2%;
+  left: 2%;
+  width: fit-content;
+  height: fit-content;
+  text-align: justify;
+  background-color: rgb(115, 92, 92);
+  padding: 0 5px 5px 5px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+  .content {
+    display: none;
+  }
+  .maximize {
+    font-size: 1rem;
+    display: flex;
+    background: none;
+    cursor: pointer;
+  }
+  .minimize-content {
+    display: flex;
+  }
+  .minimize {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+}
+.modal-adjust {
+  padding: 5px;
+  background: none;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.close {
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.maximize {
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.minimize {
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.minimize-content {
+  display: none;
+}
